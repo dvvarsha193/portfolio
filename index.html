@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhana Varsha Alamalu | Full Stack Software Engineer</title>
+  <meta name="description" content="Portfolio of Dhana Varsha Alamalu – Full Stack Software Engineer, B.Tech CSE (CGPA 9.1) at VVITU, skilled in React, Next.js, Node.js, Python, Supabase, Cloud & AI Systems." />
+  <meta name="keywords" content="Dhana Varsha Alamalu, Varsha Alamalu, Full Stack Developer, Software Engineer, React, Next.js, Node.js, Python, VVITU, SurakshaMine, AgriVita" />
+  <meta name="author" content="Dhana Varsha Alamalu" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dhana Varsha Alamalu | Full Stack Software Engineer" />
+  <meta property="og:description" content="Explore real-world full-stack architectures, AI platforms, and 17 live production cloud deployments." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['Syne', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0284c7',
+              600: '#0369a1',
+              accent: '#6366f1',
+              neon: '#10b981',
+              violet: '#8b5cf6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+
+    /* Glow utilities */
+    .glow-cyan {
+      box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.25);
+    }
+    .glow-indigo {
+      box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.25);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.25);
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#070b14] text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- Background Ambience Gradients -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80 bg-[#070b14]/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo / Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-500 p-0.5">
+          <div class="w-full h-full bg-[#0b0f19] rounded-[10px] flex items-center justify-center text-cyan-400 font-heading font-extrabold text-lg group-hover:scale-95 transition-transform">
+            DV
+          </div>
+        </div>
+        <div>
+          <span class="font-heading font-bold text-lg text-white tracking-tight flex items-center gap-1.5">
+            Dhana Varsha <span class="text-cyan-400">Alamalu</span>
+          </span>
+          <span class="text-xs font-mono text-slate-400 block tracking-wider">FULL STACK ENGINEER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+        <a href="#featured-projects" class="hover:text-cyan-400 transition-colors">Featured Projects</a>
+        <a href="#cloud-apps" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <span>17 Cloud Apps</span>
+          <span class="px-2 py-0.5 text-[10px] font-mono bg-cyan-500/20 text-cyan-400 rounded-full border border-cyan-500/30">Live</span>
+        </a>
+        <a href="#achievements" class="hover:text-cyan-400 transition-colors">Achievements</a>
+        <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="https://github.com/dvvarsha193" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-all border border-slate-700/60" title="GitHub Profile">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/dhana-varsha-31697a390" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-all border border-slate-700/60" title="LinkedIn Profile">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-cyan-500/20 active:scale-95">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-toggle" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 space-y-3 bg-[#0b0f19] border-b border-slate-800">
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">About</a>
+      <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Skills</a>
+      <a href="#featured-projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Featured Projects</a>
+      <a href="#cloud-apps" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">17 Live Cloud Apps</a>
+      <a href="#achievements" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Achievements</a>
+      <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Education</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-center bg-cyan-500 text-white font-semibold">Contact Me</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="about" class="relative pt-24 pb-20 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-8 space-y-6">
+            <!-- Open to Work Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span>AVAILABLE FOR FULL STACK & SOFTWARE ENGINEERING ROLES</span>
+            </div>
+
+            <h1 class="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white leading-tight">
+              Hi, I'm <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+                Dhana Varsha Alamalu
+              </span>
+            </h1>
+
+            <!-- Dynamic Role Typing Subhead -->
+            <p class="text-xl sm:text-2xl text-slate-300 font-medium">
+              Architecting <span class="text-cyan-400 underline decoration-cyan-500/50 underline-offset-4">robust full-stack platforms</span>, scalable cloud microservices, and AI-driven solutions.
+            </p>
+
+            <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
+              Computer Science & Engineering student at <strong>Vasireddy Venkatadri International Technological University (VVITU)</strong> with a <strong>9.1 CGPA</strong>. Proven track record building production-grade Next.js, React, Node.js, and Python/Flask systems with Supabase, PostgreSQL, and modern cloud deployment architectures.
+            </p>
+
+            <!-- Quick Contacts & Info Badges -->
+            <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400 pt-2">
+              <div class="flex items-center gap-1.5 bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-800">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span>Guntur, Andhra Pradesh</span>
+              </div>
+              <a href="mailto:varshaalamlu01@gmail.com" class="flex items-center gap-1.5 bg-slate-900/80 hover:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-800 hover:border-cyan-500/50 text-slate-300 transition-colors">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span>varshaalamlu01@gmail.com</span>
+              </a>
+              <a href="tel:+918106708259" class="flex items-center gap-1.5 bg-slate-900/80 hover:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-800 hover:border-emerald-500/50 text-slate-300 transition-colors">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <span>+91-8106708259</span>
+              </a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-4">
+              <a href="#featured-projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-semibold text-sm transition-all shadow-xl shadow-cyan-500/20 flex items-center gap-2 group">
+                <span>Explore Featured Work</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <a href="#cloud-apps" class="px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-white font-semibold text-sm transition-all border border-slate-700/80 flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                <span>View 17 Live Deployments</span>
+              </a>
+
+              <a href="https://linkedin.com/in/dhana-varsha-31697a390" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white font-medium text-sm transition-all border border-slate-800">
+                Connect on LinkedIn
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Quick Stats Highlights Card -->
+          <div class="lg:col-span-4">
+            <div class="glass-card rounded-2xl p-6 relative overflow-hidden border border-slate-800/80">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl -z-10"></div>
+              
+              <h3 class="font-heading font-bold text-lg text-white mb-6 flex items-center justify-between">
+                <span>Key Metrics</span>
+                <span class="text-xs font-mono text-cyan-400">VERIFIED</span>
+              </h3>
+
+              <div class="space-y-4">
+                <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-400 font-mono">ACADEMIC EXCELLENCE</div>
+                    <div class="text-xl font-bold font-heading text-white">9.1 CGPA</div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-md border border-cyan-500/20 font-mono">VVITU CSE</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-400 font-mono">PRODUCTION DEPLOYMENTS</div>
+                    <div class="text-xl font-bold font-heading text-emerald-400">17 Cloud Apps</div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded-md border border-emerald-500/20 font-mono">100% Live</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-400 font-mono">PROBLEM SOLVING</div>
+                    <div class="text-xl font-bold font-heading text-indigo-400">100+ LeetCode</div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 bg-indigo-500/10 text-indigo-400 rounded-md border border-indigo-500/20 font-mono">DSA Solved</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-400 font-mono">HACKATHON HONORS</div>
+                    <div class="text-xl font-bold font-heading text-amber-400">3rd Rank</div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20 font-mono">InnovaHack</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-400 font-mono">JAVA PROFICIENCY</div>
+                    <div class="text-xl font-bold font-heading text-sky-400">3-Star Rating</div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 bg-sky-500/10 text-sky-400 rounded-md border border-sky-500/20 font-mono">HackerRank</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="skills" class="py-20 border-t border-slate-800/80 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-cyan-400 font-mono text-xs tracking-widest uppercase bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">Core Competencies</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-4">Technical Skills & Tooling</h2>
+          <p class="text-slate-400 text-base mt-3">Spanning modern full-stack engineering, distributed databases, cloud DevOps, and AI integrations.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Languages -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">Programming Languages</h3>
+            <p class="text-xs text-slate-400 mb-4">Core languages used across system design, algorithms, and microservices.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">C++</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">C</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">Java</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">JavaScript (ES6+)</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">TypeScript</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-cyan-300 rounded-lg text-xs font-mono border border-slate-700/60">Python</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Frontend -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">Frameworks & Full Stack</h3>
+            <p class="text-xs text-slate-400 mb-4">Modern reactive architectures and high-throughput server backends.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">React.js</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">Next.js</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">Node.js</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">Express.js</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">Tailwind CSS</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">Bootstrap</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-indigo-300 rounded-lg text-xs font-mono border border-slate-700/60">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <!-- Databases & Cloud -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">Databases & Cloud DevOps</h3>
+            <p class="text-xs text-slate-400 mb-4">Relational & NoSQL persistence, cloud scaling, and CI/CD hosting.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">PostgreSQL</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">MongoDB</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">MySQL</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">Supabase (Auth/RLS)</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">Vercel Cloud</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-emerald-300 rounded-lg text-xs font-mono border border-slate-700/60">Git & GitHub</span>
+            </div>
+          </div>
+
+          <!-- AI & APIs -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">APIs & AI Engineering</h3>
+            <p class="text-xs text-slate-400 mb-4">LLM orchestrations, speech synthesis, geolocation, and mapping.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">RESTful APIs</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">OpenAI API</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">Gemini API</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">Web Speech API</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">Geolocation API</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-purple-300 rounded-lg text-xs font-mono border border-slate-700/60">Leaflet Maps</span>
+            </div>
+          </div>
+
+          <!-- Core CS Fundamentals -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">Core Computer Science</h3>
+            <p class="text-xs text-slate-400 mb-4">Deep mathematical logic, memory optimization, and OOP patterns.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-amber-300 rounded-lg text-xs font-mono border border-slate-700/60">Data Structures (DSA)</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-amber-300 rounded-lg text-xs font-mono border border-slate-700/60">Algorithm Design</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-amber-300 rounded-lg text-xs font-mono border border-slate-700/60">OOP (Polymorphism, Inheritance)</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-amber-300 rounded-lg text-xs font-mono border border-slate-700/60">MVC Architecture</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-amber-300 rounded-lg text-xs font-mono border border-slate-700/60">JWT Authentication</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills & Collaboration -->
+          <div class="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-2">Engineering Mindset</h3>
+            <p class="text-xs text-slate-400 mb-4">Communication, critical thinking, agile execution, and team sync.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-slate-800/80 text-rose-300 rounded-lg text-xs font-mono border border-slate-700/60">Problem-Solving</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-rose-300 rounded-lg text-xs font-mono border border-slate-700/60">Team Collaboration</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-rose-300 rounded-lg text-xs font-mono border border-slate-700/60">Rapid Prototyping</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-rose-300 rounded-lg text-xs font-mono border border-slate-700/60">Adaptability</span>
+              <span class="px-3 py-1 bg-slate-800/80 text-rose-300 rounded-lg text-xs font-mono border border-slate-700/60">Skillera Certified</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARCHITECTURAL PROJECTS -->
+    <section id="featured-projects" class="py-20 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-indigo-400 font-mono text-xs tracking-widest uppercase bg-indigo-500/10 px-3.5 py-1.5 rounded-full border border-indigo-500/20">Flagship Systems</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-4">Featured Engineering Case Studies</h2>
+          <p class="text-slate-400 text-base mt-3">Comprehensive, production-ready applications with measurable real-world impact.</p>
+        </div>
+
+        <div class="space-y-12">
+
+          <!-- Project 1: SurakshaMine -->
+          <div class="glass-card rounded-3xl p-8 lg:p-10 border border-slate-800/80 hover:border-cyan-500/40 transition-all glow-cyan relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-8 space-y-5">
+                <div class="flex flex-wrap items-center gap-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">FLAGSHIP SYSTEM</span>
+                  <span class="text-xs font-mono text-slate-400">July 2026</span>
+                </div>
+
+                <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white">
+                  SurakshaMine — Coal Mine Compliance & Safety Platform
+                </h3>
+
+                <p class="text-slate-300 text-base leading-relaxed">
+                  A high-reliability, role-based cloud safety platform architected to eliminate paper-based auditing, optimize hazardous site compliance, and enable instant emergency response across distributed coal mine operations.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800/90">
+                    <div class="text-cyan-400 font-bold text-lg mb-1">~30% Faster Turnaround</div>
+                    <div class="text-xs text-slate-400">Real-time incident reporting with GPS-tagged evidence uploads and live database synchronization.</div>
+                  </div>
+                  <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800/90">
+                    <div class="text-indigo-400 font-bold text-lg mb-1">~25% Effort Reduction</div>
+                    <div class="text-xs text-slate-400">Centralized compliance monitoring via automated dashboards eliminating manual inspection tracking.</div>
+                  </div>
+                </div>
+
+                <div class="space-y-2 text-sm text-slate-300">
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong>Multi-Role RBAC:</strong> Implemented secure authentication and Row-Level Security (RLS) policies using Supabase Auth & PostgreSQL for Admin, Inspector, and Site Manager accounts.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong>Geospatial Safety Tracking:</strong> Integrated Leaflet mapping with real-time hazard markers, incident clustering, and geofencing.</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">Next.js</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">React</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">TypeScript</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">PostgreSQL</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">Supabase Auth & Realtime</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">Leaflet Maps</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-cyan-300 rounded border border-slate-700">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 flex flex-col justify-between h-full space-y-6">
+                <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-[#0c1222] border border-cyan-500/20 space-y-4">
+                  <div class="text-xs font-mono text-cyan-400">ARCHITECTURE HIGHLIGHTS</div>
+                  <div class="text-xs text-slate-300 space-y-2">
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Frontend:</span>
+                      <span class="font-mono text-cyan-300">Next.js 14 App Router</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Database:</span>
+                      <span class="font-mono text-cyan-300">PostgreSQL + RLS</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Sync Engine:</span>
+                      <span class="font-mono text-cyan-300">Supabase Realtime WebSockets</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span>Hosting:</span>
+                      <span class="font-mono text-cyan-300">Vercel Edge Network</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-3">
+                  <a href="https://github.com/dvvarsha193/SurakshaMine" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm text-center flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 transition-all">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View SurakshaMine Repository</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project 2: AgriVita -->
+          <div class="glass-card rounded-3xl p-8 lg:p-10 border border-slate-800/80 hover:border-emerald-500/40 transition-all glow-emerald relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-8 space-y-5">
+                <div class="flex flex-wrap items-center gap-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">AI & MULTILINGUAL SPEECH</span>
+                  <span class="text-xs font-mono text-slate-400">September 2025</span>
+                </div>
+
+                <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white">
+                  AgriVita — Smart Agriculture Platform for Farmers
+                </h3>
+
+                <p class="text-slate-300 text-base leading-relaxed">
+                  An AI-powered multilingual crop-advisory platform engineered to bridge agricultural knowledge gaps. Supports 6 Indian regional languages, empowering farmers with real-time diagnostic intelligence and market clarity.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800/90">
+                    <div class="text-emerald-400 font-bold text-lg mb-1">6 Indian Languages</div>
+                    <div class="text-xs text-slate-400">Native voice-enabled advisory removing literacy & language barriers in remote agrarian belts.</div>
+                  </div>
+                  <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800/90">
+                    <div class="text-purple-400 font-bold text-lg mb-1">AI Crop Disease Vision</div>
+                    <div class="text-xs text-slate-400">Camera-based crop-disease diagnosis with automated treatment recommendations.</div>
+                  </div>
+                </div>
+
+                <div class="space-y-2 text-sm text-slate-300">
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong>Voice-Enabled Chatbot:</strong> Integrated Web Speech API for bi-directional speech recognition and conversational guidance in the field.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong>Real-Time Alerts:</strong> Live market prices, weather advisories, and targeted government subsidy scheme feeds delivered via consolidated dashboard.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong>Flask Microservice Engine:</strong> Simulated live environmental data via a custom Python Flask backend powering real-time soil & weather monitoring telemetry.</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">Python</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">Flask</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">JavaScript</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">Web Speech API</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">Geolocation API</span>
+                  <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-emerald-300 rounded border border-slate-700">JWT Security</span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 flex flex-col justify-between h-full space-y-6">
+                <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-[#0c1a17] border border-emerald-500/20 space-y-4">
+                  <div class="text-xs font-mono text-emerald-400">INTELLIGENCE STACK</div>
+                  <div class="text-xs text-slate-300 space-y-2">
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Advisory Engine:</span>
+                      <span class="font-mono text-emerald-300">OpenAI & Gemini APIs</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Audio Processing:</span>
+                      <span class="font-mono text-emerald-300">Native Web Speech Synthesis</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-800 pb-1">
+                      <span>Backend:</span>
+                      <span class="font-mono text-emerald-300">Python 3 + Flask REST API</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span>Authentication:</span>
+                      <span class="font-mono text-emerald-300">JSON Web Tokens (JWT)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-3">
+                  <a href="https://github.com/dvvarsha193/agrivita" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm text-center flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View AgriVita Repository</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Additional Notable Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+            <!-- Project 3: Mini CRM -->
+            <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 text-xs font-mono bg-sky-500/10 text-sky-400 rounded border border-sky-500/20">ENTERPRISE CRM</span>
+                <a href="https://dvvarsha193.github.io/FUTURE_FS_02/" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1">
+                  <span>Live App</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+              <h4 class="font-heading font-bold text-xl text-white mb-2">Mini CRM Application</h4>
+              <p class="text-sm text-slate-400 mb-4">
+                Full-featured client relationship manager featuring dynamic sales pipelines, contact lifecycle analytics, customizable funnel metrics, and client activity logs.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">JavaScript</span>
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">HTML5/CSS3</span>
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Future Interns</span>
+              </div>
+            </div>
+
+            <!-- Project 4: Glow & Grace -->
+            <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 text-xs font-mono bg-pink-500/10 text-pink-400 rounded border border-pink-500/20">E-COMMERCE WEB APP</span>
+                <a href="https://dvvarsha193.github.io/FUTURE_FS_03/" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-pink-400 hover:underline flex items-center gap-1">
+                  <span>Live App</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+              <h4 class="font-heading font-bold text-xl text-white mb-2">Glow & Grace Lifestyle Store</h4>
+              <p class="text-sm text-slate-400 mb-4">
+                Modern responsive skincare & wellness storefront with category filtering, shopping cart state management, product inspection modals, and checkout simulation.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Responsive UI</span>
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Modern CSS</span>
+                <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Future Interns</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 LIVE CLOUD APPLICATIONS SHOWCASE -->
+    <section id="cloud-apps" class="py-20 border-t border-slate-800/80 bg-[#090e1a]/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/20 mb-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>17 PRODUCTION DEPLOYMENTS ONLINE</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white">Full Stack Engineering Suite</h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+              17 specialized applications covering the complete software development lifecycle — from React state machines to Express middleware, MongoDB clusters, MVC authentication, and full-stack MERN architectures.
+            </p>
+          </div>
+
+          <!-- GitHub Source Link -->
+          <a href="https://github.com/dvvarsha193/Full-Stack-Development" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs border border-slate-700 flex items-center gap-2 self-start md:self-auto transition-all">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>Monorepo: Full-Stack-Development</span>
+          </a>
+        </div>
+
+        <!-- Filter Buttons & Search -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+          <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto" id="filter-buttons">
+            <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-cyan-500 text-slate-950 transition-all" data-category="all">
+              All (17)
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-slate-800 text-slate-300 hover:text-white transition-all" data-category="frontend">
+              React Frontend (9)
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-slate-800 text-slate-300 hover:text-white transition-all" data-category="backend">
+              Express & APIs (6)
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-slate-800 text-slate-300 hover:text-white transition-all" data-category="mern">
+              MERN Stack (2)
+            </button>
+          </div>
+
+          <div class="relative w-full sm:w-72">
+            <input type="text" id="app-search" placeholder="Search applications..." class="w-full px-4 py-2 pl-9 bg-slate-900 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors" />
+            <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+
+        <!-- App Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="apps-grid">
+
+          <!-- 01 React HTML -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React HTML App">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 01 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React HTML App</h4>
+              <p class="text-xs text-slate-400 mb-4">Vanilla DOM integration demonstrating direct React 18 script embedding and component lifecycle hydration.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">React 18</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Vite</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">DOM</span>
+              </div>
+              <a href="https://fs-01-react-html-app.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 02 React JSX -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React JSX App">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 02 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React JSX App</h4>
+              <p class="text-xs text-slate-400 mb-4">JSX syntax compilation, dynamic expression evaluation, and modular component hierarchy.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">React JSX</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Babel</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Vite</span>
+              </div>
+              <a href="https://fs-02-react-jsx-app.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 03 Multi Components -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Multi Components">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 03 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React Multi Components</h4>
+              <p class="text-xs text-slate-400 mb-4">Atomic design principles featuring Header, Sidebar, Content, and Footer compositional architecture.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Composition</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Props</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Modular UI</span>
+              </div>
+              <a href="https://fs-03-react-multi-components.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 04 State & Events -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React State & Events">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 04 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React State & Events</h4>
+              <p class="text-xs text-slate-400 mb-4">State management using useState hooks, event bubbling, and synthetic event propagation.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">useState</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">SyntheticEvents</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Hooks</span>
+              </div>
+              <a href="https://fs-04-react-state-events.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 05 Forms & Events -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Forms & Events">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 05 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React Forms & Validation</h4>
+              <p class="text-xs text-slate-400 mb-4">Controlled input architectures, real-time client validation regex, and form submission lifecycle.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Controlled Inputs</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Validation</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">UX Feedback</span>
+              </div>
+              <a href="https://fs-05-react-forms-events.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 06 Conditional Rendering -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Conditional Rendering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 06 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">Conditional Rendering</h4>
+              <p class="text-xs text-slate-400 mb-4">Ternary logic, short-circuit evaluation, and authentication-state UI switching.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Ternary Ops</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">State Switching</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Auth State</span>
+              </div>
+              <a href="https://fs-06-react-conditional-rendering.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 07 Rendering List -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Rendering List">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 07 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React Rendering List</h4>
+              <p class="text-xs text-slate-400 mb-4">Dynamic array mapping, key optimization for Virtual DOM diffing, and filterable catalogs.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Array.map()</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Keys</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Diffing Optimization</span>
+              </div>
+              <a href="https://fs-07-react-rendering-list.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 08 Frontend CRUD -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Frontend CRUD">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 08 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React Frontend CRUD</h4>
+              <p class="text-xs text-slate-400 mb-4">Full in-memory data lifecycle: Create, Read, Update, and Delete with optimistic state updates.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">CRUD</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Immutability</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">State Sync</span>
+              </div>
+              <a href="https://fs-08-react-frontend-crud.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 09 React Router -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="frontend" data-title="React Router App">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">LAB 09 • FRONTEND</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">React Router Single Page App</h4>
+              <p class="text-xs text-slate-400 mb-4">Client-side navigation with React Router DOM v6, nested view layouts, and dynamic URL params.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">React Router v6</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">SPA</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Nested Routes</span>
+              </div>
+              <a href="https://fs-09-react-router-app.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 10 Express Middleware -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="Express Middleware API">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 10 • BACKEND API</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">Express Middleware API</h4>
+              <p class="text-xs text-slate-400 mb-4">Hospital patient management API demonstrating custom request logging, rate tracking, and body parsing.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Express.js</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Middleware Pipeline</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">REST</span>
+              </div>
+              <a href="https://fs-10-express-middleware.vercel.app/api/v1/patients" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Endpoint JSON</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 11 MongoDB Express -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="MongoDB Express API">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 11 • DATABASE API</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">MongoDB Native Driver API</h4>
+              <p class="text-xs text-slate-400 mb-4">Book catalog REST microservice utilizing native mongodb client connection pools and non-blocking I/O.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">MongoDB</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">MongoClient</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">BSON</span>
+              </div>
+              <a href="https://fs-11-mongodb-express.vercel.app/api/v1/books" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Books JSON</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 12 Mongoose Express -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="Mongoose Express API">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 12 • ODM API</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">Mongoose ODM Express</h4>
+              <p class="text-xs text-slate-400 mb-4">Strongly typed schema models, schema validation rules, and automated timestamp tracking with Mongoose.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Mongoose</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Schema Validation</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">NoSQL</span>
+              </div>
+              <a href="https://fs-12-mongoose-express.vercel.app/api/v1/movies" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Movies JSON</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 13 MVC Express -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="MVC Express API">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 13 • ARCHITECTURE</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">MVC Structured Movie API</h4>
+              <p class="text-xs text-slate-400 mb-4">Production Model-View-Controller design pattern decoupling business logic from routing handlers.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">MVC Pattern</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Controllers</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Clean Architecture</span>
+              </div>
+              <a href="https://fs-13-mvc-express.vercel.app/api/v1/movies" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Movies API</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 14 MVC Auth -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="MVC Authentication API">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 14 • SECURITY</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">MVC Auth & JWT Security</h4>
+              <p class="text-xs text-slate-400 mb-4">Secure user registration, bcrypt password hashing, and stateless JWT token bearer validation.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">JWT</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Bcrypt</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Bearer Tokens</span>
+              </div>
+              <a href="https://fs-14-mvc-auth.vercel.app/api/v1/todos" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Protected API</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 15 Template Engine EJS -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="backend" data-title="Template Engine EJS">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LAB 15 • SSR VIEW</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">SSR EJS Template Engine</h4>
+              <p class="text-xs text-slate-400 mb-4">Server-Side Rendered (SSR) views using Embedded JavaScript templates and dynamic partials.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">EJS</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">SSR</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Dynamic Partials</span>
+              </div>
+              <a href="https://fs-15-template-engine-ejs.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-indigo-500 hover:text-white text-indigo-400 font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+                <span>Launch SSR App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 16 MERN Backend -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between border-cyan-500/30" data-category="mern" data-title="MERN API Server Backend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">LAB 16 • MERN SERVER</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">MERN API Server (Backend)</h4>
+              <p class="text-xs text-slate-400 mb-4">Serverless Express & MongoDB API engine providing RESTful article publishing, tags, and category endpoints.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Node.js</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Express</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Serverless</span>
+              </div>
+              <a href="https://fs-16-mern-backend.vercel.app/api/v1/posts" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono text-xs font-bold flex items-center justify-center gap-1.5 transition-all">
+                <span>Test Live API JSON</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 17 MERN Frontend -->
+          <div class="app-card glass-card rounded-2xl p-6 flex flex-col justify-between border-cyan-500/30" data-category="mern" data-title="MERN Client App Frontend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">LAB 17 • MERN CLIENT</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400" title="Online"></span>
+              </div>
+              <h4 class="font-heading font-bold text-lg text-white mb-1">MERN Client App (Frontend)</h4>
+              <p class="text-xs text-slate-400 mb-4">Single Page React application seamlessly consuming the live Cloud MERN API (fs-16) with interactive blog reading and posting.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 font-mono text-[11px] text-slate-400 mb-4">
+                <span class="px-2 py-0.5 bg-slate-800 rounded">React 18</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Axios</span>
+                <span class="px-2 py-0.5 bg-slate-800 rounded">Tailwind</span>
+              </div>
+              <a href="https://fs-17-mern-frontend.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-mono text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-lg shadow-cyan-500/20">
+                <span>Launch MERN App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+    <section id="achievements" class="py-20 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          
+          <!-- Achievements Column -->
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 font-mono text-xs border border-amber-500/20 mb-4">
+              <span>PROVEN TRACK RECORD</span>
+            </div>
+            <h2 class="text-3xl font-heading font-extrabold text-white mb-6">Competitive Achievements</h2>
+
+            <div class="space-y-4">
+              <!-- Achievement 1 -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-heading font-bold text-lg text-white">Solved 100+ LeetCode DSA Problems</h3>
+                    <span class="text-xs font-mono text-slate-400">August 2026</span>
+                  </div>
+                  <p class="text-sm text-slate-400 mt-1">
+                    Strengthened algorithmic thinking, data structures, and optimized complexity analysis across trees, graphs, dynamic programming, and hash maps.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Achievement 2 -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-heading font-bold text-lg text-white">3-Star HackerRank Rating in Java</h3>
+                    <span class="text-xs font-mono text-slate-400">July 2026</span>
+                  </div>
+                  <p class="text-sm text-slate-400 mt-1">
+                    Demonstrated strong proficiency in Java programming, object-oriented principles, exception handling, and memory management.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Achievement 3 -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-heading font-bold text-lg text-white">3rd Rank in InnovaHack Hackathon</h3>
+                    <span class="text-xs font-mono text-slate-400">September 2025</span>
+                  </div>
+                  <p class="text-sm text-slate-400 mt-1">
+                    Ranked third among competing collegiate teams in a high-intensity hackathon organized by VVITU, delivering a rapid working software prototype within 24 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Training Column -->
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/20 mb-4">
+              <span>CONTINUOUS LEARNING</span>
+            </div>
+            <h2 class="text-3xl font-heading font-extrabold text-white mb-6">Certificates & Training</h2>
+
+            <div class="space-y-4">
+              <!-- Training Program -->
+              <div class="glass-card rounded-2xl p-5 border border-cyan-500/30">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-mono text-cyan-400">FULL STACK BOOTCAMP • VVITU</span>
+                  <span class="text-xs font-mono text-slate-400">July 2026</span>
+                </div>
+                <h3 class="font-heading font-bold text-base text-white">Logic Building with AI-Driven Full Stack Development</h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                  End-to-end full-stack engineering boot camp mastering React.js, Node.js, Express, MongoDB, RESTful API design, AI code-acceleration, and production testing.
+                </p>
+              </div>
+
+              <!-- Cert 1: Neocolab -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-center justify-between">
+                <div>
+                  <h3 class="font-heading font-bold text-base text-white">Data Structures and Algorithms</h3>
+                  <div class="text-xs text-slate-400 font-mono mt-1">Neocolab • June 2026</div>
+                </div>
+                <span class="px-2.5 py-1 text-xs font-mono bg-cyan-500/10 text-cyan-400 rounded border border-cyan-500/20">Verified</span>
+              </div>
+
+              <!-- Cert 2: Oracle -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-center justify-between">
+                <div>
+                  <h3 class="font-heading font-bold text-base text-white">Oracle Data Platform Certified Foundations Associate</h3>
+                  <div class="text-xs text-slate-400 font-mono mt-1">Oracle • May 2026</div>
+                </div>
+                <span class="px-2.5 py-1 text-xs font-mono bg-cyan-500/10 text-cyan-400 rounded border border-cyan-500/20">Certified</span>
+              </div>
+
+              <!-- Cert 3: Infosys -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-center justify-between">
+                <div>
+                  <h3 class="font-heading font-bold text-base text-white">Programming Using C++</h3>
+                  <div class="text-xs text-slate-400 font-mono mt-1">Infosys Springboard • August 2025</div>
+                </div>
+                <span class="px-2.5 py-1 text-xs font-mono bg-cyan-500/10 text-cyan-400 rounded border border-cyan-500/20">Verified</span>
+              </div>
+
+              <!-- Cert 4: Skillera -->
+              <div class="glass-card rounded-2xl p-5 border border-slate-800/90 flex items-center justify-between">
+                <div>
+                  <h3 class="font-heading font-bold text-base text-white">Effective Communication Skills</h3>
+                  <div class="text-xs text-slate-400 font-mono mt-1">Skillera • October 2024</div>
+                </div>
+                <span class="px-2.5 py-1 text-xs font-mono bg-cyan-500/10 text-cyan-400 rounded border border-cyan-500/20">Certified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION TIMELINE -->
+    <section id="education" class="py-20 border-t border-slate-800/80 bg-[#090e1a]/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-cyan-400 font-mono text-xs tracking-widest uppercase bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">ACADEMIC EXCELLENCE</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-4">Educational Background</h2>
+          <p class="text-slate-400 text-base mt-3">Rigorous mathematical foundations and high-distinction academic track record.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- B.Tech -->
+          <div class="glass-card rounded-2xl p-6 border-cyan-500/30 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">UNDERGRADUATE</span>
+                <span class="text-xs font-mono text-slate-400">2024 – Present</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-1">Bachelor of Technology (B.Tech)</h3>
+              <p class="text-sm font-semibold text-cyan-400 mb-2">Computer Science & Engineering</p>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Vasireddy Venkatadri International Technological University (VVITU), Guntur, Andhra Pradesh.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-baseline justify-between">
+              <span class="text-xs font-mono text-slate-400">GRADE</span>
+              <span class="text-2xl font-heading font-extrabold text-cyan-400">9.1 <span class="text-sm text-slate-400 font-normal">CGPA</span></span>
+            </div>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-300">INTERMEDIATE (12TH)</span>
+                <span class="text-xs font-mono text-slate-400">2022 – 2024</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-1">Board of Intermediate Education</h3>
+              <p class="text-sm font-semibold text-slate-300 mb-2">Mathematics, Physics & Chemistry (MPC)</p>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Narayana Junior College, Guntur, Andhra Pradesh.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-baseline justify-between">
+              <span class="text-xs font-mono text-slate-400">PERCENTAGE</span>
+              <span class="text-2xl font-heading font-extrabold text-white">95.80%</span>
+            </div>
+          </div>
+
+          <!-- 10th Standard -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-300">SECONDARY (10TH)</span>
+                <span class="text-xs font-mono text-slate-400">2021 – 2022</span>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white mb-1">Secondary School Certificate</h3>
+              <p class="text-sm font-semibold text-slate-300 mb-2">High School Foundation</p>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Narayana English Medium School, Guntur, Andhra Pradesh.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-baseline justify-between">
+              <span class="text-xs font-mono text-slate-400">PERCENTAGE</span>
+              <span class="text-2xl font-heading font-extrabold text-white">96.60%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section id="contact" class="py-24 border-t border-slate-800/80 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/20 mb-6">
+          <span>LET'S BUILD SOMETHING EXTRAORDINARY</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mb-6">
+          Ready to Add Value to Your Engineering Team
+        </h2>
+
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          I am actively looking for full-time Full Stack Software Engineering positions and internships. Whether you have an open role, an architectural question, or want to collaborate, feel free to reach out.
+        </p>
+
+        <div class="glass-card rounded-3xl p-8 sm:p-10 border border-slate-800/80 mb-10 max-w-2xl mx-auto">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-left">
+                <div class="text-xs font-mono text-slate-400">DIRECT EMAIL</div>
+                <a href="mailto:varshaalamlu01@gmail.com" class="text-base sm:text-lg font-semibold text-cyan-400 hover:underline">
+                  varshaalamlu01@gmail.com
+                </a>
+              </div>
+              <a href="mailto:varshaalamlu01@gmail.com?subject=Full%20Stack%20Software%20Engineering%20Opportunity" class="px-4 py-2 rounded-lg bg-cyan-500/20 text-cyan-400 text-xs font-mono font-semibold hover:bg-cyan-500 hover:text-slate-950 transition-colors">
+                Send Mail
+              </a>
+            </div>
+
+            <div class="flex items-center justify-between p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-left">
+                <div class="text-xs font-mono text-slate-400">MOBILE CONTACT</div>
+                <a href="tel:+918106708259" class="text-base sm:text-lg font-semibold text-emerald-400 hover:underline">
+                  +91-8106708259
+                </a>
+              </div>
+              <a href="tel:+918106708259" class="px-4 py-2 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-mono font-semibold hover:bg-emerald-500 hover:text-slate-950 transition-colors">
+                Call Now
+              </a>
+            </div>
+
+            <div class="flex items-center justify-between p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-left">
+                <div class="text-xs font-mono text-slate-400">PROFESSIONAL NETWORK</div>
+                <div class="text-base sm:text-lg font-semibold text-slate-200">
+                  LinkedIn & GitHub Profiles
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <a href="https://linkedin.com/in/dhana-varsha-31697a390" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-mono transition-colors">
+                  LinkedIn
+                </a>
+                <a href="https://github.com/dvvarsha193" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-mono transition-colors">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="mailto:varshaalamlu01@gmail.com?subject=Job%20Opportunity%20-%20Dhana%20Varsha%20Alamalu" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-400 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-heading font-extrabold text-base transition-all shadow-xl shadow-cyan-500/25 active:scale-95">
+          <span>Start a Conversation</span>
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-slate-800/80 bg-[#050810] text-center text-xs font-mono text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-3">
+      <div class="flex justify-center items-center gap-6 text-slate-400 text-sm">
+        <a href="https://github.com/dvvarsha193" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/dhana-varsha-31697a390" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">LinkedIn</a>
+        <a href="mailto:varshaalamlu01@gmail.com" class="hover:text-cyan-400 transition-colors">Email</a>
+        <a href="tel:+918106708259" class="hover:text-cyan-400 transition-colors">Phone</a>
+      </div>
+      <p>&copy; 2026 Dhana Varsha Alamalu. All Rights Reserved. Engineered with precision.</p>
+    </div>
+  </footer>
+
+  <!-- CLIENT-SIDE SCRIPTS -->
+  <script>
+    // Mobile navigation toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // 17 Cloud Apps Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const appCards = document.querySelectorAll('.app-card');
+    const searchInput = document.getElementById('app-search');
+
+    function applyFilters() {
+      const activeBtn = document.querySelector('.filter-btn.active');
+      const cat = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+      const q = (searchInput.value || '').toLowerCase().trim();
+
+      appCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const text = card.textContent.toLowerCase();
+        const matchesCategory = (cat === 'all' || cardCat === cat);
+        const matchesSearch = (!q || text.includes(q));
+
+        if (matchesCategory && matchesSearch) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-cyan-500', 'text-slate-950');
+          b.classList.add('bg-slate-800', 'text-slate-300');
+        });
+        btn.classList.add('active', 'bg-cyan-500', 'text-slate-950');
+        btn.classList.remove('bg-slate-800', 'text-slate-300');
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+  </script>
+</body>
+</html>
